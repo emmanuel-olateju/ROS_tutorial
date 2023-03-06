@@ -6,4 +6,6 @@
 \contentsline {section}{\numberline {2.2}On Ubuntu, other linux distros}{5}{section.2.2}%
 \contentsline {chapter}{\numberline {3}Setup ROS on Docker}{7}{chapter.3}%
 \contentsline {chapter}{\numberline {4}Useful Resources}{9}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Linux}{9}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Installations}{9}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Linux}{9}{section.4.2}%
+\contentsline {section}{\numberline {4.3}ROS}{9}{section.4.3}%

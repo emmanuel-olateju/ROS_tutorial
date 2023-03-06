@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1678110808 "/media/emmanuel/DATA/Emmanuel_petron_Olateju/github/ROS_tutorial/00.essentials_setup/00.Essentials_setup.tex" "00.Essentials_setup.pdf" "00.Essentials_setup" 1678110809
+["pdflatex"] 1678111448 "/media/emmanuel/DATA/Emmanuel_petron_Olateju/github/ROS_tutorial/00.essentials_setup/00.Essentials_setup.tex" "00.Essentials_setup.pdf" "00.Essentials_setup" 1678111448
   "/etc/texmf/web2c/texmf.cnf" 1677084204 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/media/emmanuel/DATA/Emmanuel_petron_Olateju/github/ROS_tutorial/00.essentials_setup/00.Essentials_setup.tex" 1678110808 5737 8571916f6cfa31e0f4222851ea63ac7e ""
+  "/media/emmanuel/DATA/Emmanuel_petron_Olateju/github/ROS_tutorial/00.essentials_setup/00.Essentials_setup.tex" 1678111403 6157 392980fc304d1a8ef1fb7deedeac41ac ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -86,10 +86,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1677154122 165012 f177baa1c39a3ebd62c3096a43521a0d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1677749410 1484723 44c55e5c53272fd4f8473415a4b16ec5 ""
-  "00.Essentials_setup.aux" 1678110809 2091 7858f71ed537087e47f760800b4e08ca "pdflatex"
-  "00.Essentials_setup.out" 1678110809 1214 d9bccb6b8492a534a66c01c78bcc7517 "pdflatex"
-  "00.Essentials_setup.tex" 1678110808 5737 8571916f6cfa31e0f4222851ea63ac7e ""
-  "00.Essentials_setup.toc" 1678110809 670 db1c5948ee85500590d0dcea202288e8 "pdflatex"
+  "00.Essentials_setup.aux" 1678111448 2309 972db3a10c426e34af3c3f00423b001f "pdflatex"
+  "00.Essentials_setup.out" 1678111448 1404 d2e774cab7c232d83dfac50698972fa0 "pdflatex"
+  "00.Essentials_setup.tex" 1678111403 6157 392980fc304d1a8ef1fb7deedeac41ac ""
+  "00.Essentials_setup.toc" 1678111448 806 26e3d99e999a8f4a2616dd590fff9045 "pdflatex"
   (generated)
   "00.Essentials_setup.aux"
   "00.Essentials_setup.log"
