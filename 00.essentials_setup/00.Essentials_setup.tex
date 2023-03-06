@@ -1,0 +1,124 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  My documentation report
+%  Objetive: Explain what I did and how, so someone can continue with the investigation
+%
+% Important note:
+% Chapter heading images should have a 2:1 width:height ratio,
+% e.g. 920px width and 460px height.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,fleqn]{book} % Default font size and left-justified equations
+
+\usepackage[top=3cm,bottom=3cm,left=3.2cm,right=3.2cm,headsep=10pt,letterpaper]{geometry} % Page margins
+
+\usepackage{xcolor} % Required for specifying colors by name
+\definecolor{ocre}{RGB}{52,177,201} % Define the orange color used for highlighting throughout the book
+
+% Font Settings
+\usepackage{avant} % Use the Avantgarde font for headings
+%\usepackage{times} % Use the Times font for headings
+\usepackage{mathptmx} % Use the Adobe Times Roman as the default text font together with math symbols from the Sym­bol, Chancery and Com­puter Modern fonts
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+\usepackage[utf8]{inputenc} % Required for including letters with accents
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{amsthm}
+\usepackage{hyperref}
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\tableofcontents % Print the table of contents itself
+
+\chapter{WSL Install}\label{chpter:chapter 1}
+This applies only if you are making use of windows 10 or 11. 
+You can decide to skip this chapter a s a docker alternative for running 
+ROS is being prepared but you might have compatibility issues, thus I adice you go through this 
+painfully.
+\section{powershell install}
+\begin{itemize}
+    \item Search for powershell
+    \item Right click on it and click run as administrator
+    \item Enter 'wsl --list -online'
+    \item In the results, check for latest version having LTS attached whichmeans long time support
+    \item Enter 'wsl --install -d <DISTRO-NAME>'. In this case <DISTRO-NAME> is ubuntu-20.04.
+    \item Restart  your computer to finish the installation
+    \item Search for ubuntu and you can drag it to taskbar icon for easy startup.
+\end{itemize}
+\section{microsoft store install}
+\begin{itemize}
+    \item Open start
+    \item Search for 'Turn windows features on or off'
+    \item On the resulting window, scroll down and search for 'Virtual Machine Platform'
+    \item Ensure the 'Virtual Machine Platform' is ticked then click 'OK'
+    \item Retart your system
+    \item After system restart, open the microsoft store app
+    \item search for ubuntu
+    \item selct the latest version with LTS support
+    \item Then install.
+    \item After install, search for ubuntu on system and you can drag it to taskbar icon for easy startup.
+\end{itemize}
+
+\chapter{Docker Install}
+\section{On Windows}
+I would advice you go through \ref{chpter:chapter 1} now and install WSL appropriately. This will ensusre you ease of setup of 
+otherpackages in the future.
+\begin{itemize}
+    \item Go to \href{https://docs.docker.com/desktop/install/windows-install/}{Docker download page}
+    \item Click on 'Download Desktop for Windows'
+    \item Run the downloaded installer
+    \item Select WSL2 backend if you went through with the first chapter, else select hyper-V backend option.
+    \item Follow the remaining instructions to install and click close when installation is complete.
+    \item If your user accoount is not the admin account,search for 'Computer Management' and right click to run as administrator.
+    \item Go to 'Local Users and Groups'
+    \item Under 'Local Users and 'Groups' go to 'Groups'
+    \item Under 'Groups', select 'docker-users'
+    \item Right click to add the user to the group.
+    \item Log out and log back in so chnages can be applied 
+\end{itemize}
+\section{On Ubuntu, other linux distros}
+\begin{itemize}
+    \item Open a new terminal using Ctrl+Alt+T
+    \item Enter 'sudo apt-get remove docker docker-engine docker.io containerd runc'
+    \item It is okay if you get a result that none of the packages are installed.
+    \item Then enter 'sudo apt-get update'
+    \item Then Enter 
+        'sudo apt-get install \
+            ca-certificates \
+            curl \
+            gnupg \
+            lsb-release'
+    \item Enter 'sudo mkdir -m 0755 -p /etc/apt/keyrings'
+    \item Enter 'curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg'
+    \item Enter 
+        'echo \
+        "deb [arch=\$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+        \$(lsb\_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null'
+    \item Enter 'sudo chmod a+r /etc/apt/keyrings/docker.gpg'
+    \item Enter 'sudo apt-get update'
+    \item Enter 'sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin'
+    \item Enter 'sudo docker run hello-world'
+\end{itemize}
+The last command should print a message and then exit. 
+
+\chapter{Setup ROS on Docker}
+This part will be updated soon
+
+\chapter{Useful Resources}
+\section{Linux}
+\begin{itemize}
+    \item \hyperlink{https://www.youtube.com/watch?v=gd7BXuUQ91w}{60 linux commands}
+    \item \hyperlink{https://www.nano-editor.org/dist/latest/cheatsheet.html}{nano editor cheatsheet}
+\end{itemize}
+
+
+\end{document}

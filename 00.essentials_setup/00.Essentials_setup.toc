@@ -1,0 +1,9 @@
+\contentsline {chapter}{\numberline {1}WSL Install}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}powershell install}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}microsoft store install}{3}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Docker Install}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}On Windows}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}On Ubuntu, other linux distros}{5}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Setup ROS on Docker}{7}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Useful Resources}{9}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Linux}{9}{section.4.1}%
